@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco Cascioli-Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Explore Francesco Cascioli's portfolio showcasing his journey as a front-end developer. Passionate about building intuitive and functional web solutions.">
+<meta name="keywords" content="Front-End Developer, Francesco Cascioli, Web Developer, Portfolio, HTML, CSS, Bootstrap, JavaScript">
+<meta name="author" content="Francesco Cascioli">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="application-name" content="Francesco Cascioli Portfolio">
+<meta property="og:title" content="Francesco Cascioli - Front-End Developer">
+<meta property="og:description" content="Discover Francesco Cascioli's portfolio, a front-end developer passionate about creating functional and intuitive web solutions.">
+<meta property="og:image" content="assets/images/profile.jpg"> 
+<meta property="og:image:alt" content="Francesco Cascioli - Front-End Developer">
+<meta property="og:url" content="https://yourwebsite.com/"> 
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo"><span>Francesco</span></a>
+        <ul class="links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </ul>
+
+        <i class='bx bx-menu-alt-right' id="menu"></i>
+
+    </nav>
+
+
+    <section class="home">
+        <div class="home content">
+            <h1>Hi! I'm Francesco Cascioli</h1>
+            <h3>Front end developer</h3>
+            <p> I'm a passionate web developer who loves creating intuitive and functional digital solutions. 
+                My journey started with a simple curiosity for coding, and now, I dedicate my time to building websites that make a difference. </p>
+         </div>
+         <div class="btn-box">
+          <a href="cv.html" target="_blank" class="btn">View my Cv</a>
+           <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+
+      <div class="about-box">
+
+      <div class="about-info">
+          <h1><span>About Me</span></h1>
+          <p> My name is Francesco, and I began my journey in web development in November, driven by a passion for technology and creativity. Through the courses at Start2Impact, I am acquiring the skills to build modern, functional, and impactful digital solutions.
+
+              As someone who values continuous learning, I focus on refining my skills and exploring innovative ways to enhance user experiences. This journey is just the beginning, and I am excited about the challenges and opportunities that lie ahead. </p>
+      </div>
+    
+<div class="skills-section">
+<h2 class="skills-title">Skills</h2>
+<div class="skills-container">
+  <div class="current-skills">
+    <h3>Current Skills</h3>
+    <ul class="skills-list">
+      <li><i class="bx bx-chevron-right"></i> HTML</li>
+      <li><i class="bx bx-chevron-right"></i> CSS</li>
+      <li><i class="bx bx-chevron-right"></i> GitHub</li>
+    </ul>
+  </div>
+  <div class="future-skills">
+    <h3>Future Skills</h3>
+    <ul class="skills-list">
+      <li><i class="bx bx-chevron-right"></i> React</li>
+      <li><i class="bx bx-chevron-right"></i> Angular</li>
+      <li><i class="bx bx-chevron-right"></i> TypeScript</li>
+      <li><i class="bx bx-chevron-right"></i> JavaScript</li>
+    </ul>
+  </div>
+</div>
+</div>
+  </section>
+  
+    <section id="projects">
+        <div class="header">
+          <h1><span>My Projects</span></h1>
+        </div>
+        <div class="projects-container">
+          <div class="box">
+            <h1>Project 1</h1>
+            <p>New projects in progress. Stay tuned!</p>
+          </div>
+          <div class="box">
+            <h1>Project 2</h1>
+            <p>New projects in progress. Stay tuned!</p>
+          </div>
+          <div class="box">
+            <h1>Project 3</h1>
+            <p>New projects in progress. Stay tuned!</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <h1 class="header"><span>Contact</span></h1>
+        <form id="contactForm">
+          <div class="input-box">
+            <span>Full Name</span>
+            <input type="text" id="name" name="user_name" placeholder="Enter Your Full Name" required>
+          </div>
+          <div class="input-box">
+            <span>Email</span>
+            <input type="email" id="email" name="user_email" placeholder="Enter Your Email" required>
+          </div>
+          <div class="input-box">
+            <span>Your Message</span>
+            <textarea id="message" name="message" placeholder="Enter Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+      
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script>
+        
+        emailjs.init("9UaR2ZjBvUWywNGb8"); 
+      
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+          event.preventDefault(); 
+      
+         
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+      
+          
+          emailjs.send("service_bbm3d9m", "template_ww77qzf", {
+            user_name: name,
+            user_email: email,
+            message: message,
+          }).then(
+            function(response) {
+              alert("Message sent successfully!");
+              console.log("SUCCESS!", response.status, response.text);
+            },
+            function(error) {
+              alert("Failed to send message. Please try again.");
+              console.error("FAILED...", error);
+            }
+          );
+        });
+      </script>
+      
+      <footer>
+        <div class="footer-container">
+          <h2>Connect with me</h2>
+          <div class="social-links">
+            <a href="https://github.com/francesco-cascioli" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/francesco-cascioli-190833304/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/francescocascioli._/" target="_blank"><i class='bx bxl-instagram'></i></a>
+          </div>
+          <p>&copy; 2025 Francesco Cascioli. All rights reserved.</p>
+        </div>
+      </footer>
+      
+
+</body>
+</html>
+
+
+
+
+
+

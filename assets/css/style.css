@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background: #1e1e2f;
+    color: #c19a6b;
+}
+
+.container {
+    background: #2b2b40;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    color: #c19a6b;
+}
+
+.img-area {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    border: 15px groove  #c19a6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-area img {
+    width: 100%;
+    height: auto;
+}
+
+i {
+    color: #c19a6b; 
+    margin-right: 10px; 
+    font-size: 18px; 
+    vertical-align: middle; 
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+    background: #2b2b40;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    background: #c19a6b;
+    padding: 15px;
+    color: #4c566a;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 0 20px 20px 0;
+    
+}
+
+.left ul li, .right ul li {
+    line-height: 1.8;
+    margin-bottom: 5px;
+    color: #a9a9a9;
+}
+
+.right h3, .left h3 {
+    margin-bottom: 10px;
+    color: #a9a9a9;
+}
+
+.left p, .right p {
+    margin-bottom: 10px;
+    color: #a9a9a9;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left, .right {
+        flex: none;
+        width: 100%;
+    }
+    .container {
+        width: 95%;
+    }
+    h2 {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+
+
+    
