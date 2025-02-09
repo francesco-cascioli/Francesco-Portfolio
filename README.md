@@ -22,23 +22,7 @@ CSS3 / SCSS → Stili e animazioni
 JavaScript (JS) → Interattività
 Flexbox e Grid → Layout responsive
 Bootstrap (opzionale) → Per migliorare la responsività
-📌 Installazione e utilizzo
-1️⃣ Scaricare il progetto
-Puoi clonare questo repository con il comando:
-
-sh
-Copia
-Modifica
-git clone https://github.com/francesco-cascioli/Francesco-Portfolio.git
-2️⃣ Compilare SCSS (se necessario)
-Se vuoi modificare gli SCSS, compila i file usando:
-
-sh
-Copia
-Modifica
-sass --watch assets/scss:assets/css
-3️⃣ Aprire il file index.html nel browser
-Basta aprire il file index.html in un browser per visualizzare il sito.
+Boxicons → Per avere icone moderne
 
 🎯 Miglioramenti futuri
 ✔️ Migliorare la responsività su dispositivi mobili
@@ -47,9 +31,8 @@ Basta aprire il file index.html in un browser per visualizzare il sito.
 ✔️ Aggiungere nuove sezioni e animazioni
 
 📬 Contatti
-📧 Email: tuo@email.com
-💼 LinkedIn: Il tuo profilo
-📍 Sito Web: tuo-sito.com
+📧 Email: francescocascioli01@gmail,com
+💼 LinkedIn: https://www.linkedin.com/in/francesco-cascioli-190833304/
+📍 Sito Web: https://francesco-cascioli.github.io/Francesco-Portfolio/
 
-📢 Nota
-Sentiti libero di modificare e adattare questo progetto secondo le tue esigenze! Se vuoi contribuire, apri una pull request. 🚀
+
