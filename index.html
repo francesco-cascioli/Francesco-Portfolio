@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/menu.js"></script>
     <meta name="description" content="Explore Francesco Cascioli's portfolio showcasing his journey as a front-end developer. Passionate about building intuitive and functional web solutions.">
 <meta name="keywords" content="Front-End Developer, Francesco Cascioli, Web Developer, Portfolio, HTML, CSS, Bootstrap, JavaScript">
 <meta name="author" content="Francesco Cascioli">
@@ -25,17 +28,20 @@
 </head>
 <body>
 
-    <nav>
-      <a href="#" class="logo"><span>Francesco</span></a>
+  <nav>
+    <a href="#" class="logo"><span>Francesco</span></a>
+    <div class="links-container hidden">
       <ul class="links">
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </ul>
-
-      <i class='bx bx-menu-alt-right' id="menu"></i>
-</nav>
+    </div>
+  
+    <i class='bx bx-menu-alt-right' id="menu"></i>
+  </nav>
+  
 
 
 
@@ -57,7 +63,7 @@
       <div class="about-box">
 
       <div class="about-info">
-          <h1><span>About Me</span></h1>
+          <h2><span>About Me</span></h2>
           <p> My name is Francesco, and I began my journey in web development in November, driven by a passion for technology and creativity. Through the courses at Start2Impact, I am acquiring the skills to build modern, functional, and impactful digital solutions.
 
               As someone who values continuous learning, I focus on refining my skills and exploring innovative ways to enhance user experiences. This journey is just the beginning, and I am excited about the challenges and opportunities that lie ahead. </p>
@@ -89,26 +95,26 @@
   
     <section id="projects">
         <div class="header">
-          <h1><span>My Projects</span></h1>
+          <h2><span>My Projects</span></h2>
         </div>
         <div class="projects-container">
           <div class="box">
-            <h2>Project 1</h2>
+            <h3>Project 1</h3>
             <p>New projects in progress. Stay tuned!</p>
           </div>
           <div class="box">
-            <h2>Project 2</h2>
+            <h3>Project 2</h3>
             <p>New projects in progress. Stay tuned!</p>
           </div>
           <div class="box">
-            <h2>Project 3</h2>
+            <h3>Project 3</h3>
             <p>New projects in progress. Stay tuned!</p>
           </div>
         </div>
       </section>
       
       <section id="contact">
-        <h1 class="header"><span>Contact</span></h1>
+        <h2 class="header"><span>Contact</span></h2>
         <form id="contactForm">
           <div class="input-box">
             <span>Full Name</span>

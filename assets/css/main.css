@@ -39,11 +39,29 @@ nav .logo {
   color: #c19a6b;
   margin-right: auto;
 }
+@media (max-width: 768px) {
+  nav .links-container {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e2f;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+}
 nav .links {
   display: flex;
   gap: 2rem;
-  flex: 1;
-  justify-content: center;
+}
+@media (max-width: 768px) {
+  nav .links {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
 }
 nav .links a {
   text-decoration: none;
@@ -54,17 +72,20 @@ nav .links a {
 nav .links a:hover {
   color: #c19a6b;
 }
-
-#menu {
+nav #menu {
   display: none;
 }
 @media (max-width: 768px) {
-  #menu {
+  nav #menu {
     display: block;
     font-size: 1.8rem;
     color: #d1d1d1;
     cursor: pointer;
   }
+}
+
+.open {
+  display: flex !important;
 }
 
 .home {
@@ -135,13 +156,13 @@ nav .links a:hover {
   text-align: center;
 }
 
-h1 {
+h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
   font-weight: bold;
   color: #c19a6b;
 }
-h1 span {
+h2 span {
   background: linear-gradient(90deg, #c19a6b, #4c566a, #a9a9a9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -208,7 +229,7 @@ p {
   text-align: center;
   margin-bottom: 2rem;
 }
-#projects .header h1 {
+#projects .header h2 {
   font-size: 2.5rem;
   background: linear-gradient(90deg, #c19a6b, #4c566a, #a9a9a9);
   -webkit-background-clip: text;
@@ -230,7 +251,7 @@ p {
 #projects .projects-container .box:hover {
   transform: translateY(-5px);
 }
-#projects .projects-container .box h2 {
+#projects .projects-container .box h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #c19a6b, #4c566a, #a9a9a9);
@@ -246,7 +267,7 @@ p {
   padding: 3rem 1rem;
   background-color: #1e1e2f;
 }
-#contact h1 {
+#contact h2 {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;

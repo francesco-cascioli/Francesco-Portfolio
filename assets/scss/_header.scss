@@ -1,53 +1,74 @@
 nav {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
-  background-color: $background-color; 
-  position: sticky; 
+  background-color: $background-color;
+  position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
   .logo {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
-    color: $hover-bg-color; 
-    margin-right: auto; 
+    color: $hover-bg-color;
+    margin-right: auto;
+  }
+
+  .links-container {
+    @media (max-width: $tablet) {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: $background-color;
+      display: none;
+      flex-direction: column;
+      text-align: center;
+     
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .links {
     display: flex;
-    gap: 2rem; 
-    flex: 1; 
-    justify-content: center; 
+    gap: 2rem;
+ 
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
 
     a {
       text-decoration: none;
-      font-size: 1.2rem; 
-      color: $text-color; 
+      font-size: 1.2rem;
+      color: $text-color;
       transition: color 0.3s;
 
       &:hover {
-        color: $hover-bg-color; 
+        color: $hover-bg-color;
       }
     }
   }
-}
-
 
   #menu {
-    display: none; 
+    display: none;
 
-    @media (max-width: $tablet) { 
+    @media (max-width: $tablet) {
       display: block;
       font-size: 1.8rem;
       color: $text-color;
       cursor: pointer;
     }
   }
+}
 
 
+.open {
+  display: flex !important;
+}
 
-  
