@@ -1,0 +1,54 @@
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem 2rem;
+  background-color: $background-color; 
+  position: sticky; 
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+
+  .logo {
+    font-size: 1.8rem; 
+    font-weight: bold;
+    text-decoration: none;
+    color: $hover-bg-color; 
+    margin-right: auto; 
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem; 
+    flex: 1; 
+    justify-content: center; 
+
+    a {
+      text-decoration: none;
+      font-size: 1.2rem; 
+      color: $text-color; 
+      transition: color 0.3s;
+
+      &:hover {
+        color: $hover-bg-color; 
+      }
+    }
+  }
+}
+
+
+  #menu {
+    display: none; 
+
+    @media (max-width: $tablet) { 
+      display: block;
+      font-size: 1.8rem;
+      color: $text-color;
+      cursor: pointer;
+    }
+  }
+
+
+
+
+  
