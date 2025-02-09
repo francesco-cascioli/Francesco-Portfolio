@@ -230,7 +230,7 @@ p {
 #projects .projects-container .box:hover {
   transform: translateY(-5px);
 }
-#projects .projects-container .box h1 {
+#projects .projects-container .box h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #c19a6b, #4c566a, #a9a9a9);
