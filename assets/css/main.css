@@ -29,8 +29,6 @@ nav {
   background-color: #1e1e2f;
   position: sticky;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 nav .logo {
   font-size: 1.8rem;
@@ -319,6 +317,11 @@ p {
   background-color: #d0b38f;
 }
 
+@media (max-width: 480px) {
+  form {
+    margin-left: 10px;
+  }
+}
 footer {
   background-color: #1e1e2f;
   color: #d1d1d1;
