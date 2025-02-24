@@ -1,4 +1,4 @@
-🌐 Portafoglio di Francesco
+🌐 Portfolio di Francesco
 📌 Descrizione:
 Benvenuto nel mio portfolio! 🚀 Questo progetto è una presentazione del mio lavoro e delle mie competenze. È stato sviluppato con HTML, CSS, SCSS e JavaScript ed è completamente responsive per offrire un'esperienza ottimale su tutti i dispositivi.
 JavaScript è stato utilizzato per migliorare la barra di navigazione , rendendola più interattiva e dinamica per una navigazione fluida.
